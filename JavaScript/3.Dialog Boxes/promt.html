@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let userInput = prompt("Enter a number:");
+    console.log(typeof userInput); //string
+
+    let value = prompt("Enter your name:");
+    console.log(value); // null
+
+    // What happens if the user enters nothing and presses OK in a prompt()?
+    let input = prompt("Enter something:");
+    console.log(input); //" "
+
+    console.log(prompt("Enter something:") ?? "Default"); //"Default" if user cancels
+
+    // What is logged when the user clicks "OK" without entering anything?
+    console.log(prompt("Enter your name:") || "Guest"); //Guest
+  </script>
+</html>

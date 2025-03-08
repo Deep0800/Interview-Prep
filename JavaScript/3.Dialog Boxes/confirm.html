@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let result = confirm("Are you sure?");
+    console.log(result); // if you click on Ok => true, if you click on cancel => false
+
+    let userChoice = confirm("Do you like JavaScript?");
+    console.log(typeof userChoice); //boolean
+
+    let res = confirm("Delete everything?");
+    if (res) {
+      alert("Deleted!"); //Shows "Deleted!" if OK is clicked
+    } else {
+      alert("Cancelled!"); //Shows "Cancelled!" if cancel is clicked
+    }
+  </script>
+</html>

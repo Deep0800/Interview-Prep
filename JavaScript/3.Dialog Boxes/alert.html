@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    alert(5 + 5); //10
+
+    let result = alert("Hello");
+    console.log(result); // undefined
+
+    function showMessage() {
+      alert("Hello");
+      return "Done";
+    }
+    console.log(showMessage()); //Done
+
+    console.log(alert("Test")); //undefined
+
+    if (alert("Hello")) {
+      console.log("Alert returned true");
+    } else {
+      console.log("Alert returned false");
+    } //"Hello" is displayed, and "Alert returned false" is logged.
+
+    alert(alert(1) || 2 || alert(3)); //Shows 1, then 2
+  </script>
+</html>
