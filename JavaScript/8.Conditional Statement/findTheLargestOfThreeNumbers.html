@@ -1,0 +1,28 @@
+<!-- Find the largest of three numbers -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: brown; text-decoration: underline">
+      Find the largest of three numbers
+    </h1>
+  </body>
+  <script>
+    let num1 = prompt("Enter value 1");
+    let num2 = prompt("Enter value 2");
+    let num3 = prompt("Enter value 3");
+
+    if (num1 > num2 && num3) {
+        alert(`${num1} is largest`)
+    }else if(num2 > num1 && num3){
+        alert(`${num2} is largest`)
+    }else{
+        alert(`${num3} is largest`)
+    }
+  </script>
+</html>

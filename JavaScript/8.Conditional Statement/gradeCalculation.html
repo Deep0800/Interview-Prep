@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Grade calculation based on marks</h1>
+  </body>
+  <script>
+    let marks = prompt("Enter your marks");
+
+    switch (true) {
+      case marks >= 90 && marks <= 100:
+        alert("Grade A");
+        break;
+      case marks >= 80 && marks <= 89:
+        alert("Grade B");
+        break;
+      case marks >= 70 && marks <= 79:
+        alert("Grade C");
+        break;
+      case marks >= 60 && marks <= 69:
+        alert("Grade D");
+        break;
+      case marks < 60:
+        alert("Grade F");
+        break;
+
+      default:
+        alert("Invalid Marks Entered");
+    }
+  </script>
+</html>
