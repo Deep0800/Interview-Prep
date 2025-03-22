@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let billAmount = Number(prompt("Bill amount:"));
+    let dis = 0;
+    if (billAmount > 0 && billAmount <= 5000) {
+      dis;
+    } else if (billAmount > 5000 && billAmount <= 7000) {
+      dis = 5;
+    } else if (billAmount > 7001 && billAmount <= 9000) {
+      dis = 10;
+    } else if (billAmount > 9000) {
+      dis = 20;
+    } else {
+      console.log("Wrong input");
+    }
+    console.log(`${dis}% Discount: `, Math.floor((dis * billAmount) / 100));
+    console.log(
+      "Payable amount: ",
+      billAmount - Math.floor((dis * billAmount) / 100)
+    );
+  </script>
+</html>

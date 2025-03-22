@@ -13,8 +13,12 @@
     </h1>
   </body>
   <script>
-    let num = prompt("Enter number");
+    let num = Number(prompt("Enter number"));
 
+    if (isNaN(num)) {
+      console.log("Wrong Input")
+    }
+    
     if (num > 0) {
       alert("Positive number");
     } else if (num < 0) {
